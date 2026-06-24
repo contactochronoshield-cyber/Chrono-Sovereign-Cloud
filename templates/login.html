@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chrono Sovereign Cloud - Login</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI,Arial,sans-serif;
+background:#0A2540;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+.login-box{
+background:#1E2A44;
+padding:40px;
+border-radius:12px;
+width:320px;
+box-shadow:0 0 20px rgba(0,255,170,.2);
+}
+
+h1{
+text-align:center;
+color:#00FFAA;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:none;
+border-radius:6px;
+background:#0f172a;
+color:white;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#00FFAA;
+font-weight:bold;
+cursor:pointer;
+}
+
+.error{
+color:#ff6666;
+text-align:center;
+margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🛡️ Chrono</h1>
+
+{% if error %}
+<div class="error">
+{{ error }}
+</div>
+{% endif %}
+
+<form method="POST">
+
+<input
+type="text"
+name="username"
+placeholder="Usuario"
+required>
+
+<input
+type="password"
+name="password"
+placeholder="Contraseña"
+required>
+
+<button type="submit">
+Ingresar
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
