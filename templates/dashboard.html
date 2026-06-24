@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chrono Sovereign Cloud - Dashboard</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0A2540;
-            color: #00FFAA;
-            text-align: center;
-            padding: 50px;
+        :root {
+            --primary: #00FFAA;
+            --dark: #0A2540;
+            --gray: #1E2A44;
         }
-        h1 { color: #00FFAA; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--dark);
+            color: #E0E0E0;
+        }
+        header {
+            background: linear-gradient(135deg, #0A2540, #1E2A44);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+        }
+        h1 {
+            color: var(--primary);
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: var(--gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #334155;
+        }
+        .status {
+            color: var(--primary);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>🛡️ Chrono Sovereign Cloud</h1>
-    <p><strong>Dashboard en construcción</strong></p>
-    <p>El sistema está funcionando correctamente.</p>
-    <hr>
-    <p><small>Chrono Shield Systems - Soberanía Digital</small></p>
+    <header>
+        <h1>🛡️ Chrono Sovereign Cloud</h1>
+        <p>Infraestructura Soberana • Monitoreo Autónomo</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Estado del Sistema</h2>
+            <p class="status">● OPERATIVO</p>
+            <p><strong>Versión:</strong> 0.1.0 Enterprise</p>
+            <p><strong>Modo:</strong> Soberano / Offline-First</p>
+        </div>
+        
+        <div class="card">
+            <h2>Bienvenido a Chrono Shield Systems</h2>
+            <p>Plataforma de monitoreo diseñada para entornos de alta soberanía digital.</p>
+        </div>
+    </div>
 </body>
 </html>
